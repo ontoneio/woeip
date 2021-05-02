@@ -14,7 +14,12 @@ DEBUG = env("DEBUG")
 # NOTE: This setting assumes all requests are proxied through a web server (e.g. nginx). If that is not the case,
 # ensure this is set to a more restrictive value. See https://docs.djangoproject.com/en/2.1/ref/settings/#allowed-hosts
 # for more information.
-ALLOWED_HOSTS = ["*"]
+
+# CHANGED FOR SECURITY - @ontoneio - 5-02-2021
+ALLOWED_HOSTS = [
+    # '*',
+    '.vercel.app'
+]
 
 # Application definition
 
@@ -89,7 +94,9 @@ WSGI_APPLICATION = "woeip.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {"default": env.db()}
+# TEMPORARY NOT LOADING FOR TESTING ON VERCEL - @ontoneio - 05-02-2021
+DATABASES = {}
+# DATABASES = {"default": env.db()}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
