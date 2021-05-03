@@ -1,6 +1,6 @@
 {
     "functions": {
-        "api/woeip/wsgi.py":{
+        "woeip/wsgi.py":{
             "memory": 1024
         }
     },
