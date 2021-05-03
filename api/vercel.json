@@ -1,0 +1,14 @@
+{
+    "functions": {
+<<<<<<< HEAD:vercel.json
+        "api/woeip/wsgi.py":{
+=======
+        "api/wsgi.py":{
+>>>>>>> 31085d25996b21b40551a904484ab631a64790f1:backend/vercel.json
+            "memory": 1024
+        }
+    },
+    "routes" : [{
+        "src" : "/(.*)", "dest":"api/wsgi.py"
+    }]
+}   
