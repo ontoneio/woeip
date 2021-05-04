@@ -3,5 +3,8 @@
         "api/woeip/wsgi.py":{
             "memory": 1024
         }
-    }
+    },
+    "routes" : [{
+        "src" : "/api", "dest":"api/woeip/wsgi.py"
+    }]
 }   
