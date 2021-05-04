@@ -6,7 +6,8 @@
  * @returns {string} url for  the api
  */
 export const apiUrl = (endpoint) => {
-  const protocol = process.env.REACT_APP_PROTOCOL || "http";
+  const protocol = "https";
+  // const protocol = process.env.REACT_APP_PROTOCOL || "https";
   const domain = process.env.REACT_APP_VERCEL_URL || "api.lvh.me";
   // const domain = process.env.REACT_APP_API_DOMAIN || "api.lvh.me";
   return `${protocol}://${domain}/api/${endpoint}`;
