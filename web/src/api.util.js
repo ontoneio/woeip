@@ -7,7 +7,7 @@
  */
 export const apiUrl = (endpoint) => {
   const protocol = process.env.REACT_APP_PROTOCOL || "http";
-  const domain = process.env.VERCEL_URL || "api.lvh.me";
+  const domain = process.env.REACT_APP_VERCEL_URL || "api.lvh.me";
   // const domain = process.env.REACT_APP_API_DOMAIN || "api.lvh.me";
   return `${protocol}://${domain}/api/${endpoint}`;
 };
